@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mptcp:
+    build: .
+    container_name: "mptcp"
+    command: bash -c "sleep infinity"
+    working_dir: /src
+    volumes:
+      - ./src:/src
